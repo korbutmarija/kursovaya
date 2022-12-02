@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="hairdresser:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/hairdresser_jar</output-path>
+    <root id="archive" name="hairdresser.jar">
+      <element id="module-output" name="hairdresser" />
+      <element id="library" level="project" name="javafx-src" />
+      <element id="library" level="project" name="mysql-connector-java-8.0.221" />
+      <element id="library" level="project" name="javafx-sdk-15.0" />
+      <element id="library" level="project" name="javafx-sdk-15.01" />
+      <element id="library" level="project" name="openjdk-15.0" />
+      <element id="library" level="project" name="src" />
+    </root>
+  </artifact>
+</component>
