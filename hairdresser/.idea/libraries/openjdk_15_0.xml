@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="openjdk-15.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.jdks/openjdk-15.0.1" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
