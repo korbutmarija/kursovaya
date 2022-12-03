@@ -60,7 +60,7 @@ public class Client extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource(.....));
+        Parent root = FXMLLoader.load(getClass().getResource("/Client/HomePageWindow.fxml"));
         primaryStage.setTitle("Beauty Salon");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
