@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minWidth="583.0" prefHeight="450.0" prefWidth="741.0" style="-fx-background-color: #c7c5c6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Admin.ApWindowController">
+   <children>
+      <Separator layoutY="32.0" prefHeight="12.0" prefWidth="741.0" />
+      <Circle layoutX="19.0" layoutY="19.0" radius="11.0" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#EBCBAE" />
+                  <Stop color="#8F8787" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#EBCBAE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+      <Label layoutX="38.0" layoutY="6.0" text="Записи">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="InfoTable" layoutX="14.0" layoutY="52.0" prefHeight="280.0" prefWidth="717.0">
+        <columns>
+          <TableColumn fx:id="IDColumn" prefWidth="25.0" text="ID" />
+          <TableColumn fx:id="NameClColumn" prefWidth="123.0" text="Имя Клиента" />
+            <TableColumn fx:id="ServiceColumn" prefWidth="144.0" text="Услуги" />
+            <TableColumn fx:id="MasterColumn" minWidth="7.0" prefWidth="111.0" text="Мастер" />
+            <TableColumn fx:id="DateColumn" prefWidth="78.0" text="Дата" />
+            <TableColumn fx:id="TimeColumn" prefWidth="63.0" text="Время" />
+            <TableColumn fx:id="PriceColumn" prefWidth="95.0" text="Стоимость" />
+        </columns>
+      </TableView>
+      <Button fx:id="AddButton" layoutX="22.0" layoutY="349.0" mnemonicParsing="false" prefWidth="105.0" text="Добавить">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="DeleteButton" layoutX="495.0" layoutY="349.0" mnemonicParsing="false" prefWidth="105.0" text="Удалить">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="BackButton" layoutX="622.0" layoutY="349.0" mnemonicParsing="false" prefWidth="105.0" text="Назад">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchField" layoutX="167.0" layoutY="350.0" prefHeight="31.0" prefWidth="215.0" />
+      <Button fx:id="searchButton" layoutX="387.0" layoutY="350.0" mnemonicParsing="false" text="поиск">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="UpdateButton" layoutX="338.0" layoutY="404.0" mnemonicParsing="false" text="Обновить">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
