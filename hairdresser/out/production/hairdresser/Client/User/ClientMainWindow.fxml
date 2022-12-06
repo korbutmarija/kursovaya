@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="555.0" prefWidth="574.0" style="-fx-background-image: url('file:D:/background11.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.User.ClientMainWindowController">
+   <children>
+      <Pane layoutX="23.0" layoutY="67.0" prefHeight="422.0" prefWidth="528.0" style="-fx-background-color: #c7c5c6;">
+         <children>
+            <MenuBar layoutY="35.0" prefHeight="32.0" prefWidth="528.0">
+              <menus>
+                <Menu fx:id="ApMenu" mnemonicParsing="false" text="Мои записи">
+                     <items>
+                        <MenuItem fx:id="ApMItem" mnemonicParsing="false" text="Записи" />
+                     </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Услуги">
+                  <items>
+                    <MenuItem fx:id="HairServiceMItem" mnemonicParsing="false" text="Парикмахерские" />
+                        <MenuItem fx:id="NailServiceMItem" mnemonicParsing="false" text="Маникюр и педикюр" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Мастера">
+                     <items>
+                        <MenuItem fx:id="HairMasterMItem" mnemonicParsing="false" text="Парикмахеры" />
+                        <MenuItem fx:id="NailMasterMItem" mnemonicParsing="false" text="Маникюра и педикюра" />
+                     </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Label layoutX="35.0" layoutY="5.0" text="Косметический салон">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <Circle layoutX="17.0" layoutY="17.0" radius="11.0" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#EBCBAE" />
+                        <Stop color="#8F8787" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#EBCBAE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Circle>
+            <ImageView fitHeight="255.0" fitWidth="120.0" layoutX="15.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" style="visibility: true;">
+               <image>
+                  <Image url="@../../picture.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="ExitButton" layoutX="370.0" layoutY="363.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="109.0" text="Выход">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="AppointmentButton" layoutX="181.0" layoutY="363.0" mnemonicParsing="false" text="Записаться">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="UsernameLabel" layoutX="44.0" layoutY="301.0">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="ServiceTable" layoutX="150.0" layoutY="77.0" prefHeight="257.0" prefWidth="364.0" visible="false">
+              <columns>
+                <TableColumn fx:id="SNameTColumn" prefWidth="270.0" text="Название" />
+                <TableColumn fx:id="PriceTColumn" minWidth="0.0" prefWidth="93.0" text="Стоимость" />
+              </columns>
+            </TableView>
+            <TableView fx:id="MasterTable" layoutX="150.0" layoutY="77.0" prefHeight="257.0" prefWidth="364.0" visible="false">
+              <columns>
+                <TableColumn fx:id="MNameTColumn" prefWidth="183.0" text="Имя" />
+                <TableColumn fx:id="ExperienceTColumn" prefWidth="180.0" text="Опыт" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
