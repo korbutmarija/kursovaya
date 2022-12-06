@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="563.0" style="-fx-background-image: url('file:D:/background6.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.User.RegistrationWindowController">
+   <children>
+      <Pane layoutX="75.0" layoutY="47.0" prefHeight="406.0" prefWidth="413.0" style="-fx-background-color: #c7c5c6;">
+         <children>
+            <Separator layoutY="31.0" prefHeight="12.0" prefWidth="413.0" style="-fx-background-color: #6e5a67;" />
+            <Circle layoutX="20.0" layoutY="17.0" radius="11.0" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#EBCBAE" />
+                        <Stop color="#8F8787" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#EBCBAE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Circle>
+            <Label layoutX="36.0" layoutY="3.0" text="Регистрация">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="74.0" text="Имя:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="111.0" text="Дата рождения:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="152.0" text="Пол:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="195.0" text="Username:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="237.0" text="Password:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NameTField" layoutX="154.0" layoutY="69.0" prefHeight="31.0" prefWidth="217.0" />
+            <DatePicker fx:id="BirthDPicker" layoutX="154.0" layoutY="106.0" />
+            <CheckBox fx:id="ManCBox" layoutX="154.0" layoutY="150.0" mnemonicParsing="false" text="Мужской">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="WomanCBox" layoutX="268.0" layoutY="150.0" mnemonicParsing="false" text="Женский">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </CheckBox>
+            <TextField fx:id="UsernameTField" layoutX="154.0" layoutY="189.0" prefHeight="31.0" prefWidth="217.0" />
+            <PasswordField fx:id="UsPField" layoutX="154.0" layoutY="232.0" prefHeight="31.0" prefWidth="217.0" />
+            <Button fx:id="OkButton" layoutX="103.0" layoutY="353.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="69.0" text="OK">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="BackButton" layoutX="249.0" layoutY="353.0" mnemonicParsing="false" text="Назад">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="CommentLabel" alignment="CENTER" layoutX="13.0" layoutY="302.0" prefHeight="21.0" prefWidth="386.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
