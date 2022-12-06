@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="519.0" prefWidth="651.0" style="-fx-background-color: #c7c5c6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Admin.StatisticWindowController">
+   <children>
+      <Separator layoutY="32.0" prefHeight="12.0" prefWidth="665.0" />
+      <Circle layoutX="19.0" layoutY="19.0" radius="11.0" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#EBCBAE" />
+                  <Stop color="#8F8787" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#EBCBAE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+      <Label layoutX="38.0" layoutY="6.0" text="Статистика">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="SexPChart" layoutX="19.0" layoutY="56.0" prefHeight="305.0" prefWidth="300.0" title="Пол" />
+      <PieChart fx:id="AgePChart" layoutX="335.0" layoutY="56.0" prefHeight="305.0" prefWidth="300.0" title="Возраст" />
+      <CheckBox fx:id="ManCBox" layoutX="354.0" layoutY="391.0" mnemonicParsing="false" text="Мужчины">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="WomanCBox" layoutX="497.0" layoutY="391.0" mnemonicParsing="false" text="Женщины">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="OkButton" layoutX="287.0" layoutY="473.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="65.0" text="OK">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
