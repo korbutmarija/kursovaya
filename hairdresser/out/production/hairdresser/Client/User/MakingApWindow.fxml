@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane focusTraversable="true" prefHeight="560.0" prefWidth="565.0" style="-fx-background-image: url('file:D:/background11.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.User.MakingApWindowController">
+   <children>
+      <SplitPane dividerPositions="0.07407407407407407" layoutX="81.0" layoutY="62.0" orientation="VERTICAL" prefHeight="461.0" prefWidth="388.0" style="-fx-background-color: #c7c5c6;">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="26.0" prefWidth="336.0">
+               <children>
+                  <Circle layoutX="17.0" layoutY="16.0" radius="11.0" strokeType="INSIDE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#EBCBAE" />
+                              <Stop color="#8F8787" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="#EBCBAE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Circle>
+                  <Label layoutX="31.0" layoutY="2.0" text="Запись">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="421.0" prefWidth="394.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="78.0" text="Услуги:">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="132.0" text="Мастер:">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="195.0" text="Дата:">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="300.0" text="Стоимость:">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="250.0" text="Время:">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="17.0" text="Тип Услуги:">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="DateDPicker" layoutX="123.0" layoutY="190.0" prefHeight="31.0" prefWidth="256.0" />
+                  <Button fx:id="BackButton" layoutX="232.0" layoutY="376.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="109.0" text="Назад">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="OkButton" layoutX="53.0" layoutY="376.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="109.0" text="ОК">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="CommentLabel" alignment="CENTER" layoutX="13.0" layoutY="344.0" prefHeight="20.0" prefWidth="366.0">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="TypeCBox" layoutX="123.0" layoutY="11.0" prefHeight="31.0" prefWidth="256.0" />
+                  <ComboBox fx:id="MasterCBox" layoutX="123.0" layoutY="127.0" prefHeight="31.0" prefWidth="256.0" />
+                  <ComboBox fx:id="ServiceCBox" layoutX="123.0" layoutY="73.0" prefHeight="31.0" prefWidth="256.0" />
+                  <Label fx:id="PriceLabel" alignment="CENTER" layoutX="123.0" layoutY="300.0" prefHeight="31.0" prefWidth="256.0" style="-fx-background-color: #fbfbfb; -fx-border-color: #b8b6b6; -fx-border-width: 1;">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TimeTField" layoutX="123.0" layoutY="245.0" prefHeight="31.0" prefWidth="256.0">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
