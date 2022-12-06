@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="577.0" style="-fx-background-image: url('file:D:/images/fon3.jpg'); -fx-border-color: #c57479; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.HomePageWindowController">
+
+   <children>
+      <SplitPane dividerPositions="0.15656565656565657" layoutX="104.0" layoutY="103.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="378.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="57.0" prefWidth="298.0" style="-fx-background-color: #b1afaf; -fx-border-color: #686b68;">
+               <children>
+                  <Label layoutX="33.0" layoutY="-2.0" text="Косметический салон" textFill="#0d0d0d">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Circle layoutX="16.0" layoutY="16.0" radius="11.0" strokeType="INSIDE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#EBCBAE" />
+                              <Stop color="#8F8787" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="#EBCBAE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Circle>
+               </children>
+            </AnchorPane>
+          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="134.0" minWidth="376.0" prefHeight="194.0" prefWidth="376.0" style="-fx-background-color: #c7c5c6; -fx-border-color: #686b68;">
+               <children>
+                  <Label fx:id="EnterMainLabel" layoutX="55.0" layoutY="28.0" text="ДОБРО ПОЖАЛОВАТЬ!" textFill="#171717">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="EnterMainButton" layoutX="147.0" layoutY="97.0" mnemonicParsing="false" style="-fx-background-color: #e0b6d0; -fx-border-color: #8F8787; -fx-border-width: 2;" text="Войти">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
