@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="437.0" prefWidth="550.0" style="-fx-background-color: #c7c5c6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Admin.ClientsWindowController">
+   <children>
+      <Separator layoutY="32.0" prefHeight="12.0" prefWidth="550.0" />
+      <Circle layoutX="19.0" layoutY="19.0" radius="11.0" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#EBCBAE" />
+                  <Stop color="#8F8787" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#EBCBAE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+      <Label layoutX="38.0" layoutY="6.0" text="Клиенты">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="InfoTable" layoutX="14.0" layoutY="52.0" prefHeight="279.0" prefWidth="384.0">
+        <columns>
+          <TableColumn fx:id="IDColumn" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="NameColumn" prefWidth="133.0" text="Имя" />
+            <TableColumn fx:id="BirthDateColumn" prefWidth="121.0" text="Дата рождения" />
+            <TableColumn fx:id="SexColumn" prefWidth="89.0" text="Пол" />
+        </columns>
+      </TableView>
+      <Button fx:id="AddButton" layoutX="58.0" layoutY="380.0" mnemonicParsing="false" prefWidth="105.0" text="Добавить">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="DeleteButton" layoutX="250.0" layoutY="380.0" mnemonicParsing="false" prefWidth="105.0" text="Удалить">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="BackButton" layoutX="422.0" layoutY="380.0" mnemonicParsing="false" prefWidth="105.0" text="Назад">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="273.0" fitWidth="130.0" layoutX="409.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../picture4.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="CommentLabel" alignment="CENTER" layoutX="14.0" layoutY="349.0" prefHeight="20.0" prefWidth="528.0">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="UpdateButton" layoutX="425.0" layoutY="315.0" mnemonicParsing="false" text="Обновить">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
