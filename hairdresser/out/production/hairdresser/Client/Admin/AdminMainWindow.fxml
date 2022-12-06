@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="571.0" prefWidth="565.0" style="-fx-background-image: url('file:D:/images/background11.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Admin.AdminMainWindowController">
+   <children>
+      <Pane layoutX="50.0" layoutY="89.0" prefHeight="417.0" prefWidth="466.0" style="-fx-background-color: #c7c5c6;">
+         <children>
+            <Circle layoutX="16.0" layoutY="17.0" radius="11.0" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#EBCBAE" />
+                        <Stop color="#8F8787" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#EBCBAE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Circle>
+            <Label layoutX="32.0" layoutY="3.0" text="Косметический салон">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="205.0" fitWidth="101.0" layoutX="5.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../picture1.jpg" />
+               </image>
+            </ImageView>
+            <Separator layoutY="36.0" prefHeight="10.0" prefWidth="466.0" />
+            <Button fx:id="UsersButton" layoutX="113.0" layoutY="87.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="169.0" text="Пользователи">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="AdminsButton" layoutX="291.0" layoutY="87.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="169.0" text="Администраторы">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ClientsButton" layoutX="113.0" layoutY="158.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="169.0" text="Клиенты">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="AppointmentsButton" layoutX="291.0" layoutY="158.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="169.0" text="Записи">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="StatisticsButton" layoutX="197.0" layoutY="214.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="169.0" text="Статистика">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ExitButton" layoutX="201.0" layoutY="355.0" mnemonicParsing="false" text="Выход">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="AdminLabel" layoutX="27.0" layoutY="277.0">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
